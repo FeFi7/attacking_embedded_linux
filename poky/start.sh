@@ -7,6 +7,5 @@ qemu-system-x86_64 \
 -cpu IvyBridge -machine q35 -smp 4 -m 256 -serial mon:vc -serial null  \
 -kernel images/qemux86-64/bzImage--5.15.22+git0+2d38a472b2_7f685244af-r0-qemux86-64-20220519165043.bin \
 -net user,hostfwd=tcp::10022-:22,hostfwd=tcp::8443-:443 \
--machine ubuntu \
 -net nic \
 -append 'root=/dev/vda rw mem=512M ip=:::::eth0:dhcp oprofile.timer=1 tsc=reliable no_timer_check rcupdate.rcu_expedited=1 '
