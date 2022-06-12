@@ -19,6 +19,7 @@ Furthermore, the Go ("Golang") programming language must be installed. We achiev
 
 Alternatively, wget can be used to download the appropriate package and then install it. 
 (wget https://golang.org/dl/go1.17.linux-amd64.tar.gz)
+
 Install curl and jq.
 
 >$ sudo apt-get install curl
