@@ -25,13 +25,14 @@ Install curl and jq.
 >
 >$ sudo apt-get install jq
 
-Because the root file system of the Poky distribution created in this thesis exceeds the 100MB one need to install the GIT extension lfs (Large File Storage). This can be installed as follows:
+:warning:Because the root file system of the Poky distribution created in this thesis exceeds the 100MB one need to install the GIT extension lfs (Large File Storage).:warning: 
+
+This can be installed as follows:
 >$ sudo apt-get install git-lfs 
 
 or alternatively via https://git-lfs.github.com/. To do this, the following steps must be performed:
 >$ curl -s https://packagecloud.io/install/repositories /github/git-lfs/script.deb.sh | sudo bash 
 
->$ sudo apt-get install git-lfs
 
 The extension must also be used for the repository clone:
 >$ git lfs clone https://github.com/FeFi7/attacking_embedded_linux.git 
