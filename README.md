@@ -11,6 +11,7 @@ Likewise, all patches and layers are provided that the Poky distribution can be 
 To be able to carry out the training, a few things have to be prepared. The first step is to ensure that a Linux machine is available as the basic system. This can be any Linux distribution. The commands will be executed using an Ubuntu distribution. First all dependencies have to be installed. This includes qemu, qemu-system. These can be installed with the following commands:
 
 >$ sudo apt-get install qemu 
+>
 >$ sudo apt-get install qemu-system
 
 Furthermore, the Go ("Golang") programming language must be installed. We achieve this with the help of:
@@ -21,6 +22,7 @@ Alternatively, wget can be used to download the appropriate package and then ins
 Install curl and jq.
 
 >$ sudo apt-get install curl
+>
 >$ sudo apt-get install jq
 
 Because the root file system of the Poky distribution created in this thesis exceeds the 100MB one need to install the GIT extension lfs (Large File Storage). This can be installed as follows:
