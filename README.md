@@ -53,8 +53,10 @@ Tiny File Manager Application: https://127.0.0.1:8443/tinyfilemanager.php
 Note: The self-signed certificate must be confirmed the first time it is accessed. 
 
 The login credentials for the necessary applications are:
+
 poky Login: hansolo Password: felix
-Tiny File Manager: Login: admin Password: admin@123
+
+Tiny File Manager: admin Password: admin@123
 
 After ensuring that all requirements have been installed and the applications are working properly, the first attack can begin.
 The first attack involves a combination of the CVE-2021-40964 to get a remote shell on the target system and the execution of an exploit for the CVE-2022-0847 to get root privileges on the system. For this, two shells should be opened on the host system. In the first shell we start netcat with the following command:  
