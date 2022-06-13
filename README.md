@@ -103,8 +103,11 @@ To execute the exploit, the following command must be run:
 
 The feedback is provided:
 >sending initial ClientHello
+>
 >connected
+>
 >sending malicious ClientHello
+>
 >malicious handshake failed, exploit might have worked: EOF
 
 Furthermore, the message Error in libssl.so appears in the QEMU Terminal. Now it is necessary to switch back to the web browser and reload the page. The page is now no longer accessible and the lighttpd was taken down.
