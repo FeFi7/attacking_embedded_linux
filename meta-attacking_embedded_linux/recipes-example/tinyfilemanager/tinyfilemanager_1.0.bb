@@ -8,6 +8,7 @@ SRC_URI = "file://config.php \
 	   file://lighttpd.conf \
 	   file://php.ini \
 	   file://index.html \
+	   file://SW.jpg \
 	   file://server.pem"
 	   
 
@@ -26,6 +27,7 @@ do_install() {
         install -m 0755 lighttpd.conf ${D}/etc/lighttpd/
         install -m 0755 php.ini ${D}/etc/php/apache2-php8/   
         install -m 0755 index.html ${D}/www/pages 
+        install -m 0755 SW.jpg ${D}/www/pages
 }
 
 FILES:${PN} = "/www/pages/config.php \
@@ -34,5 +36,6 @@ FILES:${PN} = "/www/pages/config.php \
 	       /www/pages/tinyfilemanager.php \
 	       /etc/lighttpd/lighttpd.conf \
 	       /etc/php/apache2-php8/php.ini \
-	       /etc/lighttpd/ssl/domain.com/server.pem \    
+	       /etc/lighttpd/ssl/domain.com/server.pem \  
+	       /www/pages/SW.jpg  \
 	      "
